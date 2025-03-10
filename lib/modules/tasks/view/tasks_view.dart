@@ -77,7 +77,7 @@ class _TasksViewState extends State<TasksView> {
                         child: Padding(
                           padding: const EdgeInsets.only(bottom: 8),
                           child: Container(
-                            height: 40,
+                            height: 36,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8),
                               color: Theme.of(
