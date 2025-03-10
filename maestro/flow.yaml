@@ -1,0 +1,42 @@
+appId: com.example.testing_with_maestro
+---
+
+- launchApp:
+    clearState: true
+- tapOn:
+    text: "+"
+- tapOn:
+    id: "textfield"
+- inputText: "Task 1"
+- tapOn:
+    id: add-btn
+- assertVisible:
+    text: "Task 1"
+- tapOn:
+    id: "textfield"
+- inputText: "Task 2"
+- tapOn:
+    id: add-btn
+- assertVisible:
+    text: "Task 2"
+- tapOn:
+    id: "textfield"
+- inputText: "Task 3"
+- tapOn:
+    id: add-btn
+- assertVisible:
+    text: "Task 3"
+- assertVisible:
+    text: "Task 2"
+- assertVisible:
+    text: "Task 1"
+- tapOn:
+    id: "item2"
+- assertNotVisible:
+    text: "Task 3"
+- tapOn:
+    id: "item1"
+- assertNotVisible:
+    text: "Task 2"
+- assertVisible:
+    text: "Task 1"
